@@ -52,11 +52,15 @@ This project was developed as part of the **Advanced C** and **Linux Systems Pro
 
 ## 🧠 How the Application Works
 
-- Contact details are stored using **structures**  
-- Data is written to and read from files to ensure persistence  
-- Each operation (add, search, edit, delete) is handled through separate logical modules  
-- Input validation is implemented to avoid invalid or duplicate entries  
-- The program follows a clean control flow for better readability  
+- Each large number is stored as a Doubly Linked List, where:
+  - Head → Most Significant Digit (MSB)
+  - Tail → Least Significant Digit (LSB)
+
+- Arithmetic operations traverse the list from tail to head (for carry/borrow handling)
+- Multiplication uses grade-school method with optimized carry handling
+- Division uses long-division algorithm instead of repeated subtraction for better performance
+- Temporary lists are carefully deleted to prevent memory leaks
+- Clean modular structure ensures readability and maintainability
 
 ---
 
