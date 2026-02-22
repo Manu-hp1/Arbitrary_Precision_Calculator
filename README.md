@@ -1,39 +1,41 @@
-# 📘 **Arbitrary Precision Calculator (APC) using C**
+# 📘 Arbitrary Precision Calculator (APC) using C
 
-A menu-driven **Arbitrary Precision Calculator** developed in **C**, designed to perform** arithmetic operations** on **very large integers** using custom **Doubly Linked List** implementation.
+A **menu-driven Arbitrary Precision Calculator developed in C**, designed to perform arithmetic operations on very large integers using a **custom Doubly Linked List implementation**.
 
-This project demonstrates strong fundamentals in Data Structures, C programming, memory management, and algorithm design.
+This project demonstrates strong fundamentals in **Data Structures, C programming, memory management, and algorithm design**.
+
 ---
 
 ## 🚀 Project Description
 
-The **Arbitrary Precision Calculator (APC)** enables users to perform arithmetic operations on numbers that exceed the limit of standard C data types (int, long).
+The Arbitrary Precision Calculator (APC) enables users to perform arithmetic operations on numbers that exceed the limit of standard C data types (int, long).
 
-Instead of using built-in libraries, the calculator represents large numbers using a Doubly Linked List, where each node stores a single digit.
+Instead of using built-in libraries, the calculator represents large numbers using a **Doubly Linked List**, where each node stores a single digit.
 
-All arithmetic operations are implemented manually, ensuring a deep understanding of number manipulation and algorithm efficiency.
+All arithmetic operations are implemented manually to ensure a deep understanding of number manipulation and algorithm efficiency.
 
-This project was developed as part of the **Advanced C** and **Linux Systems Programming** training at **Emertxe Information Technologies**.
+This project was developed as part of the **Advanced C and Linux Systems Programming training at Emertxe Information Technologies**.
+
 ---
 
 ## 🎯 Objective
 
-- To implement** big-integer arithmetic** without using built-in large number libraries
-- To apply **Data Structures (Doubly Linked Lists)** in real-world computation
-- To understand algorithm **complexity and optimization**
-- To strengthen memory management and modular programming skills
-  
+- Implement big-integer arithmetic without using built-in large number libraries  
+- Apply **Data Structures (Doubly Linked Lists)** in real-world computation  
+- Understand algorithm complexity and optimization  
+- Strengthen memory management and modular programming skills  
+
 ---
 
 ## ✨ Features
 
-- Addition of large integers
-- Subtraction with borrow handling
-- Optimized multiplication using grade-school algorithm (O(n²))
-- Long division implementation (O(n²))
-- Proper comparison of large numbers
-- Memory-safe dynamic allocation and deallocation
-- Modular and structured code design
+- Addition of large integers  
+- Subtraction with proper borrow handling  
+- Optimized multiplication using grade-school algorithm (O(n²))  
+- Long division implementation (O(n²))  
+- Comparison of large numbers  
+- Dynamic memory allocation and safe deallocation  
+- Clean modular code structure  
 
 ---
 
@@ -42,7 +44,7 @@ This project was developed as part of the **Advanced C** and **Linux Systems Pro
 - **C Programming**
 - **Doubly Linked Lists**
 - **Dynamic Memory Allocation (malloc, free)**
-- **Pointers and Pointer-to-Pointer Handling**
+- **Pointers & Pointer-to-Pointer Handling**
 - **Algorithm Optimization**
 - **Time Complexity Analysis**
 - **Modular Programming**
@@ -52,65 +54,102 @@ This project was developed as part of the **Advanced C** and **Linux Systems Pro
 
 ## 🧠 How the Application Works
 
-- Each large number is stored as a Doubly Linked List, where:
+- Each number is stored as a **Doubly Linked List**
   - Head → Most Significant Digit (MSB)
   - Tail → Least Significant Digit (LSB)
-
-- Arithmetic operations traverse the list from tail to head (for carry/borrow handling)
-- Multiplication uses grade-school method with optimized carry handling
-- Division uses long-division algorithm instead of repeated subtraction for better performance
-- Temporary lists are carefully deleted to prevent memory leaks
-- Clean modular structure ensures readability and maintainability
+- Arithmetic operations traverse from tail to head to handle carry and borrow.
+- Multiplication uses the grade-school method.
+- Division uses an optimized long-division approach instead of repeated subtraction.
+- Temporary lists are deleted properly to avoid memory leaks.
+- Modular design improves readability and maintainability.
 
 ---
 
 ## 📂 Project Structure
 
-```text
-AddressBook/
+```
+APC/
 ├── main.c
-├── contact.c
-├── contact.h
-├── file.c
-├── file.h
-└── contacts.csv
+├── addition.c
+├── subtraction.c
+├── multiplication.c
+├── division.c
+├── insert_delete.c
+├── validate.c
+├── print_list.c
+└── main.h
 ```
 
 ---
 
 ## ▶️ Compilation and Execution
 
-### Compile and run:
+### Compile:
 ```bash
-gcc *.c -o address_book
-./address_book
+gcc *.c -o apc
 ```
 
-## Learning Outcome and Impact
-
-This project strengthened my understanding of core C programming concepts such as structures, pointers, and file handling. It improved my problem-solving approach, debugging skills, and ability to design clean, modular applications. Working on this project increased my confidence in translating theoretical knowledge into a practical, working solution.
-
----
-
-## Acknowledgment
-
-I would like to sincerely thank Anand Lokhande Sir for his guidance and clear explanation of C programming concepts, which helped me build this project with a strong logical foundation.
+### Run:
+```bash
+./apc
+```
 
 ---
 
-## GitHub Repository
+## 📊 Time Complexity
 
-[https://github.com/Manu-hp1/Address_Book]
+| Operation       | Time Complexity |
+|----------------|----------------|
+| Addition       | O(n)           |
+| Subtraction    | O(n)           |
+| Multiplication | O(n²)          |
+| Division       | O(n²)          |
 
 ---
 
-## About Me
+## 🧪 Sample Usage
 
-I am an Embedded Systems Trainee at Emertxe Information Technologies, building strong fundamentals in C programming, Linux, and system-level concepts. I am passionate about writing clean code and continuously improving my technical skills.
+```
+Enter first number  : 123456789123456789
+Enter operator      : *
+Enter second number : 987654321987654321
+
+Result:
+121932631356500531347203169112635269
+```
 
 ---
 
-## License
+## 📈 Learning Outcome
+
+This project strengthened my understanding of:
+
+- Data Structures and algorithm design  
+- Big-integer arithmetic implementation  
+- Memory management and pointer handling  
+- Time complexity optimization  
+- Writing clean, modular C code  
+
+It improved my confidence in solving logic-intensive problems and implementing system-level solutions.
+
+---
+
+## 👨‍💻 Author
+
+**Manu H P**  
+Embedded Systems Enthusiast  
+Skilled in C Programming, Linux Internals, and Data Structures  
+
+---
+
+## 📎 GitHub Repository
+
+```
+https://github.com/Manu-hp1/Arbitrary_Precision_Calculator
+```
+
+---
+
+## 📄 License
 
 This project is developed for learning and educational purposes.
-
